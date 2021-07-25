@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.ui{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+}
+    #fps{
+        position: absolute;
+        color: #c50000;
+        font-weight: 900;
+        text-shadow: 0px 0px 1px #000;
+        padding: 5px;
+        user-select: none;
+    }
+    #fs{
+        position: absolute;
+        right: 0;
+        padding: 5px;
+        user-select: none;
+    }
+    #start{
+        position: absolute;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        padding: 10px 15px;
+        font-size: 40px;
+        background: linear-gradient(180deg, #ff5151, #1ca723);
+        box-shadow: 1px 0 10px #000;
+        border-radius: 50%;
+        animation: drop 300ms ease forwards;
+    }
+    #start:hover, #start:active{
+        background: linear-gradient(180deg, #ff1b1b, #0bff17);
+    }
+    @keyframes drop{
+        from{
+            top: 70%;
+            transform: translate(-50%, -50%) rotate(-360deg);
+        }
+        to{
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+    }
+
+canvas{
+    background: linear-gradient(0deg, #381505f5 0%, #3f1806 10%, #0b410e 18%, #3ec544 20%, #ffffff 20%, #4fc9df 100%);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid yellow;
+}
+    #player_canvas{
+        z-index: 100;
+    }

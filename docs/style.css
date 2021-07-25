@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #232323;
+    color: #ffbf00;
+    padding: 20px 10px;
+}
+h1{
+    padding-left: 20px;
+    font-family: monospace;
+    color: #1b1b1b;
+    background: linear-gradient(90deg, #00c3ff 10%, transparent 60%);
+}
